@@ -154,14 +154,14 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
+@media all and (max-width: 380px) {
+  .logo {
+    font-size: 48px;
+  }  
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    align-items: center;
-  }
+}
+
+@media all and (min-width: 480px) {
 
   form {
     display: flex;
@@ -207,7 +207,15 @@ form input {
   #host .group img.item {
     width: 0;
   }
+}
 
+@media all and (min-width: 650px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+  }
 }
 
 @media all and (min-width: 1000px) {
